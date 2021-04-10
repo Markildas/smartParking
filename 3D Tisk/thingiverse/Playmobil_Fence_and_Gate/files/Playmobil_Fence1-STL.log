@@ -1,0 +1,25 @@
+STL translation to Solid Edge
+Date: Tuesday,March 30,2021 11:39AM
+Source File:C:\Users\tvgam\Downloads\Playmobil_Fence_and_Gate\files\Playmobil_Fence1.stl
+Author: Unknown
+Organization: Unknown
+Source System: DEX
+
+Hardware:
+Processor: Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz
+Operating System: Windows 10 Professional
+Installed Memory: 15.87 GB
+
+Software Information:
+Parasolid Version: 32.1.222
+PSBodyshop Version: 32.1.94
+Solid Edge Version: 221.00.03.003 x64
+
+STL Import Options
+Heal Mesh Faults:Off
+Make Base Feature:On
+Enable Logging:On
+
+Translation progress:
+Translation process completed
+Time required to translate:00 : 00 : 01

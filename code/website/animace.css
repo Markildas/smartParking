@@ -1,0 +1,22 @@
+.transition-content{
+    opacity: 1;
+    transition: 100ms;
+}
+
+html.is-animating .transition-content{
+    opacity: 0;
+}
+
+.transition-nav {
+    transition: 200ms;
+    transform: translateY(50)
+    
+  }
+
+  html.is-animating .transition-nav{
+    
+    transform: translateY(5);
+    
+  }
+
+  

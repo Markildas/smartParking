@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+video#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  box-shadow: 5px 5px 25px rgba(34, 34, 34, 0.6);
+  border-radius: 90px;
+  background-color: rgba(34, 34, 34, 0.6);
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 480px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 38px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.desc {
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.inoText {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 30px 125px;
+  font-size: 22px;
+  border-radius: 90px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 11px;
+  height: 50px;
+  width: 50%;
+}
+
+.nav {
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 25px rgba(34, 34, 34, 0.6);
+  width: 600px;
+  height: 80px;
+  background-color: rgba(34, 34, 34, 0.6);
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 90px;
+  top: 64%;
+  left: 50%;
+  transition: 300ms;
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 24px;
+}
+
+li{
+  display: inline;
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 37px;
+  height: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+ a:hover{
+   color: rgba(255, 255, 255, 0.1);
+ }
+
+ .current{
+     color: rgba(255, 255, 255, 0.1);
+ }
+
+ .signature{
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 25px rgba(34, 34, 34, 0.6);
+  width: 250px;
+  height: 45px;
+  background-color: rgba(34, 34, 34, 0.6);
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 90px;
+  top: 97%;
+  left: 50%;
+  color: white;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  padding-top: 7px;
+  font-size: 13px;
+ }
+
+ .current{
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.test{
+  position: absolute;
+}
