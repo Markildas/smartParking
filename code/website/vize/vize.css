@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+video#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.nav {
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 25px rgba(34, 34, 34, 0.6);
+  width: 600px;
+  height: 80px;
+  background-color: rgba(34, 34, 34, 0.6);
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 90px;
+  top: 6%;
+  left: 50%;
+  transition: 300ms;
+}
+
+.navul {
+  list-style-type: none;
+  padding-top: 24px;
+}
+
+.navli{
+  display: inline;
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 37px;
+  height: 25px;
+}
+
+.dokument{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+ a:hover{
+   color: rgba(255, 255, 255, 0.1);
+ }
+
+ .current{
+     color: rgba(255, 255, 255, 0.1);
+ }
