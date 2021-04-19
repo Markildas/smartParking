@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/code/website/media/favicon.png">
+    <link rel="stylesheet" href="servoair.css">
+    <script defer src="app.js"></script>
+    <title>Servo a IR senzor</title>
+</head>
+
+<body>
+    <div class="video">
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="media/backgroundvideo.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="nav">
+            <ul class="navul">
+                <li class="navli"> <a href="/code/website/home.html"> HOME</a> </li>
+                <li class="navli"> <a href="/code/website/smartParking.html"> PROJEKT</a> </li>
+                <li class="navli"> <a href="#"> KONTAKT</a> </li>
+            </ul>
+        </div>
+
+        <div class="subnav">
+            <ul class="subnavul">
+                <li class="subnavli"> <a class="current" href="#"> Nákresy & schémata</a> </li>
+                <li class="subnavli"> <a href="#"> Statistiky</a> </li>
+                <li class="subnavli"> <a href="#"> Odkazy</a> </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <img class="ir" src="/code/website/media/IR SENZOR.png" alt="IR senzor schéma" width="447px">
+            <img class="servo" src="/code/website/media/SERVO SG90.png" alt="Servo schéma" width="447px">
+            <h2>Zapojení serva s infra červeným senzorem</h2>
+            <p class="article" >Nejdříve jsem si zkusil zapojit a naprogramovat servo, které se pohne o 90 stupňů, 
+                když infra červený senzor zachytí překážku. Ve finálním projektu to bude fungovat jako závora,
+                ke které, když přijede auto, tak se mu závora na 2 vteřiny otevře, aby mohlo projet.
+                Nejdříve se mi to zdálo jako něco nesmyslně složitého,
+                ale pak jsem se to začal postupně učit a zjistil jsem, že to není vůbec taková věda jak jsem
+                si myslel.
+            </p>
+
+            <div class="buttoncode">
+                <p class="buttonik" > <a href="https://github.com/Markildas/smartParking/blame/main/code/smart_parking/smart_parking.ino" target="_blank">PŘEJÍT NA KÓD</a> </p>
+            </div>
+        </div>
+
+        
+</body>
+
+</html>

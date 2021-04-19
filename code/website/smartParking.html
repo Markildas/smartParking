@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>smartParking</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="smartParkings.css">
+  <link rel="shortcut icon" type="image/png" href="media/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="video">
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="media/backgroundvideo.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="nav">
+      <ul class="navul">
+        <li class="navli"> <a href="/code/website/home.html"> HOME</a> </li>
+        <li class="navli"> <a class="current" href="#"> PROJEKT</a> </li>
+        <li class="navli"> <a href="/code/website/kontakt.html"> KONTAKT</a> </li>
+      </ul>
+    </div>
+
+    <div class="subnav">
+      <ul class="subnavul">
+        <li class="subnavli"> <a href="#"> Nákresy & schémata</a> </li>
+        <li class="subnavli"> <a href="#"> Statistiky</a> </li>
+        <li class="subnavli"> <a href="#"> Odkazy</a> </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">20.říjen 2020</h3>
+              <h1>Počátky projektu 🖋</h1>
+              <p>Projekt začal samotným výběrem tématu,
+                v nabídce toho byla spousta, já jsem si
+                vybral chytré parkoviště. Následovala <a class="avize" href="/code/website/vize.html">vize
+                  projektu</a> ...</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">15.listopad 2020</h3>
+              <h1>Převzetí součástek 📦</h1>
+              <p>Poté co přišli moje požadované součástky, vyzvedl jsem si je od pana učitele. A zapojovaní mohlo
+                započít...</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">18.listopad 2020</h3>
+              <h1><a href="/code/website/servoair.html">Zapojení serva a infra červeného senzoru 🔌</a></h1>
+              <p>Nejdříve jsem si zkusil zapojit a naprogramovat servo, které se pohne o 90 stupňů, když ir senzor
+                zachytí překážku…</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">30.listopad 2020</h3>
+              <h1> <a href="/code/website/displejasenzory.html">Zapojení displeje a 4x senzoru překážek 📺</a> </h1>
+              <p>Jako další jsem zapojil displej, na kterém jsem vypisoval kolik je volných míst na parkovišti…</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">5.leden 2021</h3>
+              <h1> <a href="/code/website/esp8266.html">Zapojení ESP8266 📶</a> </h1>
+              <p>Následovalo ESP8266 pro připojení na internet a zapisování do databáze Thingspeak, já jsem zapisoval
+                počet volných míst, což si myslím, že je jediná věc co návštěvníka u parkoviště zajímá…</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">6.leden 2021</h3>
+              <h1>Ukládání zdrojových kódů do verzovacího nástroje👨‍💻</h1>
+              <p>Použil jsem <a class="avize" target="_blank" href="https://github.com/Markildas/smartParking">GitHub</a> , ostatně asi jako všichni. Navíc jsem k tomu použil GitHub desktop, díky kterému se
+                mi složka s kódy po pár kliknutích synchronizovala s
+                kódy přímo v repozitáři a navíc mi usnadnila občasné psaní kódu na mém notebooku...</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">7.leden 2021</h3>
+              <h1>Vedení projektu 👨‍💼</h1>
+              <p>Nástrojů, ve kterém lze projekt vést je nespočet. Já jsem si vybral <a class="avize" target="_blank" href="https://trello.com/b/HgzbBt8K/smartparking">Trello</a> , protože s ním mám
+                zkušenosti…</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">15.leden 2021</h3>
+              <h1> <a href="/code/website/3dmodely.html">3D modely 🔺</a> </h1>
+              <p>Většinu modelů jsem si našel na Thingiverse, některé konkrétní jsem si však musel vymodelovat sám,
+                použil jsem na to software Solid Edge.
+                Chvíli trvalo se v něm naučit, ale nějakým způsobem jsem to zvládl a vzniklo z toho tohle…</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">27.leden 2021</h3>
+              <h1>Tvorba webu 🖋</h1>
+              <p>Jako jeden z mála jsem se rozhodl web psát v html a css (možná i trochu js 😊 ), Jako ide jsem použil
+                VS Code, protože má spoustu rozšířeních, které usnadňují práci s kódem…</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">15.březen 2021</h3>
+              <h1>Finální video 🎥</h1>
+              <p>Jako poslední krok projektu jsem natočil ukázkové video. Natočil jsem ho svým mobilem
+                iPhone 7 a následně zeditoval v Adobe Premiere Pro, se kterým mám docela dost zkušeností..</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+</body>
+
+</html>

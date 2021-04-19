@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/code/website/media/favicon.png">
+    <link rel="stylesheet" href="displejasenzory.css">
+    <script defer src="app.js"></script>
+    <title>Displej a 4x senzor</title>
+</head>
+
+<body>
+    <div class="video">
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="media/backgroundvideo.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="nav">
+            <ul class="navul">
+                <li class="navli"> <a href="/code/website/home.html"> HOME</a> </li>
+                <li class="navli"> <a href="/code/website/smartParking.html"> PROJEKT</a> </li>
+                <li class="navli"> <a href="#"> KONTAKT</a> </li>
+            </ul>
+        </div>
+
+        <div class="subnav">
+            <ul class="subnavul">
+                <li class="subnavli"> <a class="current" href="#"> Nákresy & schémata</a> </li>
+                <li class="subnavli"> <a href="#"> Statistiky</a> </li>
+                <li class="subnavli"> <a href="#"> Odkazy</a> </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <img class="displej" src="/code/website/media/DISPLAY.png" alt="Displej schéma" width="447px">
+            <img class="ctyrisenzor" src="/code/website/media/4 WAY SENZOR.png" alt="4 way senzor schéma" width="447px">
+            <h2>Zapojení displeje a 4x senzoru překážek</h2>
+            <p class="article" >Jako další jsem zapojil displej, na kterém jsem vypisoval kolik
+                 je volných míst na parkovišti. Toto opět bylo snažší než jsem čekal. Musel jsem ovšem nainstalovat
+                 knihovnu pro I2C displej, což ale nebyl žádný problém. Myslím si, že to funguje velmi dobře a celkem spolehlivě
+                 což se o všem říct nedá<div class=""></div>
+            </p>
+
+            <div class="buttoncode">
+                <p class="buttonik" > <a href="https://github.com/Markildas/smartParking/blame/main/code/smart_parking/smart_parking.ino" target="_blank">PŘEJÍT NA KÓD</a> </p>
+            </div>
+        </div>
+
+        
+</body>
+
+</html>

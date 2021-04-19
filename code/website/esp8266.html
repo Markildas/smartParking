@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/code/website/media/favicon.png">
+    <link rel="stylesheet" href="esp8266.css">
+    <script defer src="app.js"></script>
+    <title>Displej a 4x senzor</title>
+</head>
+
+<body>
+    <div class="video">
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="media/backgroundvideo.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="nav">
+            <ul class="navul">
+                <li class="navli"> <a href="/code/website/home.html"> HOME</a> </li>
+                <li class="navli"> <a href="/code/website/smartParking.html"> PROJEKT</a> </li>
+                <li class="navli"> <a href="#"> KONTAKT</a> </li>
+            </ul>
+        </div>
+
+        <div class="subnav">
+            <ul class="subnavul">
+                <li class="subnavli"> <a class="current" href="#"> Nákresy & schémata</a> </li>
+                <li class="subnavli"> <a href="#"> Statistiky</a> </li>
+                <li class="subnavli"> <a href="#"> Odkazy</a> </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <img class="displej" src="/code/website/media/ESP 8266.png" alt="ESP8266 schéma" width="447px">
+            <img class="ctyrisenzor" src="/code/website/media/esp8266 desticka.png" alt="ESP8266 desticka"
+                width="447px">
+            <h2>Zapojení ESP8266</h2>
+            <p class="article">
+                Následovalo ESP8266 pro připojení na internet a zapisování do databáze Thingspeak, já jsem zapisoval 
+                počet volných míst, což si myslím, že je jediná věc co návštěvníka u parkoviště zajímá. Tato část byla 
+                velmi náročná, protože to bylo poprvné jak pro mě tak i pro učitele. Setkal jsem se s několika problémy.
+                První byl samotné zapojení, u kterého si musíte dávat pozor abyste zapojili RX do TX a naopak.
+                Další problém byl nejspíše s mým internetem, kdy mi ESP vypisovalo DNS error. 
+                Což jsem následně vyřešil zadáním statické IP adresy.
+            </p>
+        </div>
+        <div class="buttoncode">
+            <p class="buttonik"> <a
+                    href="https://github.com/Markildas/smartParking/blame/main/code/smart_parking/smart_parking.ino"
+                    target="_blank">PŘEJÍT NA KÓD</a> </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

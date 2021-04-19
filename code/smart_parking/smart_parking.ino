@@ -6,10 +6,10 @@ Servo myservo;
 Servo myservo2;           
 int pinOut [4] = {28, 30, 32, 34};
 int pos = 0; 
-int otevrena_zavora = 90;
-int zavrena_zavora = 0;
-int otevrena_zavora2 = 90;
-int zavrena_zavora2 = 0;
+int otevrena_zavora = 0;
+int zavrena_zavora = 90;
+int otevrena_zavora2 = 0;
+int zavrena_zavora2 = 90;
 int obstaclePin = 24;
 int obstaclePin2 = 38;
 int hasObstacle = HIGH;
@@ -28,18 +28,19 @@ String myHOST = "184.106.153.149";
 String myPORT = "80";
 String myFIELD = "field1"; 
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2);
-int period = 10000;
+int period = 20000;
+int chvilka= 1000;
 unsigned long time_now = 0;
 void setup() {
   
   Serial.begin(9600);
   Serial1.begin(115200);
 
-  espData("AT+RST", 1000, DEBUG);                      //Reset the ESP8266 module
-  espData("AT+CWMODE=1", 1000, DEBUG);                 //Set the ESP mode as station mode
-  espData("AT+CWJAP=\""+ mySSID +"\",\""+ myPWD +"\"", 1000, DEBUG);   //Connect to WiFi network
+  espData("AT+RST", 1000, DEBUG);                      
+  espData("AT+CWMODE=1", 1000, DEBUG);                 
+  espData("AT+CWJAP=\""+ mySSID +"\",\""+ myPWD +"\"", 1000, DEBUG); 
   espData("AT+CIFSR", 1000, DEBUG);
-  //delay(1000);
+  
 
 
   pinMode(obstaclePin, INPUT);
@@ -55,14 +56,15 @@ void setup() {
 
 void loop() {
 
-  mistoJed = (digitalRead(pinOut[0]));    //bindovani parkovacich mist
+  mistoJed = (digitalRead(pinOut[0]));    
   mistoDva = (digitalRead(pinOut[1]));
   mistroTri = (digitalRead(pinOut[2]));
   mistorCttyr = (digitalRead(pinOut[3]));
 
-  volnaMista = mistoJed + mistoDva + mistroTri +mistorCttyr;    //secteni volnych mist
+  volnaMista = mistoJed + mistoDva + mistroTri + mistorCttyr;    //secteni volnych mist
 
 
+  
   lcd.setCursor(0, 0);            //zápis na displej
   lcd.print("Smart parkoviste");
   lcd.setCursor(0, 1);
@@ -92,9 +94,8 @@ void loop() {
   }
 
   if(millis() >= time_now + period){
-        time_now += period;
-        esp8266();
-    
+      time_now += period;
+       esp8266();
   }
 
   
@@ -102,6 +103,11 @@ void loop() {
 }
 
 void esp8266(){
+  lcd.clear();
+  lcd.setCursor(0, 0);            //zápis na displej
+      lcd.print("Odesilani dat do");
+      lcd.setCursor(0, 1);
+      lcd.print("databaze...");
   String sendData = "GET /update?api_key="+ myAPI +"&"+ myFIELD +"="+String(volnaMista);
   espData("AT+CIPMUX=0", 1000, DEBUG); 
   espData("AT+CIPSTART=\"TCP\",\""+ myHOST +"\","+ myPORT, 1000, DEBUG);
