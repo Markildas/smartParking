@@ -50,10 +50,9 @@ a {
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
     transition: 0.2s;
-    
 }
 
-.linkovec{
+.linkovec {
     text-decoration: underline;
 }
 
@@ -74,7 +73,7 @@ a:hover {
     border-radius: 90px;
     background-color: rgba(34, 34, 34, 0.6);
     position: absolute;
-    top: 53%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1400px;
@@ -83,16 +82,44 @@ a:hover {
     color: white;
 }
 
-.nazev{
+.nazev {
     font-weight: 300;
     font-style: italic;
 }
 
-.obsah{
+.subnav {
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 25px rgba(34, 34, 34, 0.6);
+    width: 400px;
+    height: 40px;
+    background-color: rgba(34, 34, 34, 0.6);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 90px;
+    top: 14%;
+    left: 50%;
+    transition: 300ms;
+}
+
+.subnavul {
+    list-style-type: none;
+    padding-top: 11px;
+}
+
+.subnavli {
+    display: inline;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 28px;
+}
+
+.obsah {
     font-weight: 500;
 }
 
-.kontakty{
+.kontakty {
     float: left;
     height: 200px;
     width: 200px;
@@ -101,10 +128,9 @@ a:hover {
     margin-left: 200px;
     text-align: left;
     font-size: 28px;
-   
 }
 
-.kontakydesc{
+.kontakydesc {
     font-size: 28px;
     text-align: left;
     float: left;
@@ -114,12 +140,45 @@ a:hover {
     line-height: 1.5cm;
 }
 
-img{
-    float: left;
-    padding-left: 100px;
+
+
+h1 {
     padding-top: 50px;
 }
 
-h1{
-    padding-top: 50px;
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 34, 34, 0.5);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    
+    opacity: 70%;
+    transition: 300ms;
+}
+
+img:hover {
+    opacity: 100%;
+}
+
+.grid {
+    margin-top: 30px;
+    float: left;
+    width: 1400px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: 197px;
+    
+    
 }

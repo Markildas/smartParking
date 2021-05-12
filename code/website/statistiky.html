@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="statistiky.css">
+    <link rel="shortcut icon" type="image/png" href="/code/website/media/favicon.png">
+    <title>Statistiky</title>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div class="video">
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="media/backgroundvideo.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="nav">
+            <ul class="navul">
+                <li class="navli"> <a href="/code/website/home.html"> HOME</a> </li>
+                <li class="navli"> <a href="/code/website/smartParking.html"> PROJEKT</a> </li>
+                <li class="navli"> <a href="/code/website/kontakt.html"> KONTAKT</a> </li>
+            </ul>
+        </div>
+
+        <div class="subnav">
+            <ul class="subnavul">
+                <li class="subnavli"> <a  href="/code/website/nakresy.html"> Nákresy & schémata</a> </li>
+                <li class="subnavli"> <a class="current" href="#"> Statistiky</a> </li>
+                <li class="subnavli"> <a href="/code/website/odkazy.html"> Odkazy</a> </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>Statistiky</h1>
+            <div class="iframy">
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1334470/charts/1?bgcolor=%23ffffff&color=%23d62020&days=1&dynamic=true&results=60&type=line"></iframe>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1334470/widgets/286981"></iframe>
+
+            </div>
+            
+
+
+        </div>
+</body>
+
+</html>

@@ -18,7 +18,7 @@ int lotFour = 0;
 int freeLots = 0;
 
 int wait = 20000;
-unsigned long time_now = 0;
+long time_now = 0;
 
 String text = "Volna mista: ";
 String mySSID = "Sweet Home Alabama";

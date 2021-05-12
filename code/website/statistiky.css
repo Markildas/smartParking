@@ -50,10 +50,9 @@ a {
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
     transition: 0.2s;
-    
 }
 
-.linkovec{
+.linkovec {
     text-decoration: underline;
 }
 
@@ -74,52 +73,57 @@ a:hover {
     border-radius: 90px;
     background-color: rgba(34, 34, 34, 0.6);
     position: absolute;
-    top: 53%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1400px;
-    height: 700px;
+    width: 1000px;
+    height: 500px;
     text-align: center;
     color: white;
 }
 
-.nazev{
+.nazev {
     font-weight: 300;
     font-style: italic;
 }
 
-.obsah{
-    font-weight: 500;
+.subnav {
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 25px rgba(34, 34, 34, 0.6);
+    width: 400px;
+    height: 40px;
+    background-color: rgba(34, 34, 34, 0.6);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 90px;
+    top: 14%;
+    left: 50%;
+    transition: 300ms;
 }
 
-.kontakty{
-    float: left;
-    height: 200px;
-    width: 200px;
-    margin-top: 150px;
-    line-height: 1.5cm;
-    margin-left: 200px;
-    text-align: left;
-    font-size: 28px;
-   
+.subnavul {
+    list-style-type: none;
+    padding-top: 11px;
 }
 
-.kontakydesc{
-    font-size: 28px;
-    text-align: left;
-    float: left;
-    height: 200px;
-    width: 300px;
-    margin-top: 150px;
-    line-height: 1.5cm;
+.subnavli {
+    display: inline;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 28px;
 }
 
-img{
-    float: left;
-    padding-left: 100px;
+
+h1 {
     padding-top: 50px;
 }
 
-h1{
-    padding-top: 50px;
+.iframy{
+    margin-top: 40px;
 }
+
+
+
+
